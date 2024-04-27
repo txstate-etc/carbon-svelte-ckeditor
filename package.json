@@ -17,7 +17,7 @@
     "prepublishOnly": "npm run package",
     "dev": "vite dev",
     "devck": "cp -R ~/Software/dosgato-ckeditor/build node_modules/@dosgato/ckeditor && rm -rf node_modules/.vite && vite dev",
-    "package": "svelte-kit sync && svelte-package && sass src/styles.scss dist/richstyles.css",
+    "package": "svelte-kit sync && svelte-package",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint --ignore-path .gitignore ."
@@ -40,7 +40,6 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
     "eslint-config-standard-with-typescript": "^43.0.0",
     "eslint-plugin-svelte": "^2.0.0",
-    "sass": "^1.58.0",
     "svelte-check": "^3.0.1",
     "tslib": "^2.3.1",
     "typescript": "^5.0.2"
