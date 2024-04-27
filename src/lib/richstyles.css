@@ -1,0 +1,128 @@
+figure.table.ck-widget {
+  width: 100%;
+  overflow-x: auto;
+}
+figure.table.ck-widget.header-color-none th {
+  background: transparent;
+  color: #3e3e3e;
+}
+figure.table.ck-widget.header-color-none th a {
+  color: #3e3e3e;
+}
+figure.table.ck-widget.header-color-none th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget.header-color-gold th {
+  background: #c4a77d;
+  color: #000000;
+}
+figure.table.ck-widget.header-color-gold th a {
+  color: #000000;
+}
+figure.table.ck-widget.header-color-gold th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget.header-color-maroon th {
+  background: #501214;
+  color: #ffffff;
+}
+figure.table.ck-widget.header-color-maroon th a {
+  color: #ffffff;
+}
+figure.table.ck-widget.header-color-maroon th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget.header-color-sandstone th {
+  background: #f5f1ee;
+  color: #222222;
+}
+figure.table.ck-widget.header-color-sandstone th a {
+  color: #222222;
+}
+figure.table.ck-widget.header-color-sandstone th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget.header-color-charcoal th {
+  background: #363534;
+  color: #ffffff;
+}
+figure.table.ck-widget.header-color-charcoal th a {
+  color: #ffffff;
+}
+figure.table.ck-widget.header-color-charcoal th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget.header-color-blue th {
+  background: #00507A;
+  color: #ffffff;
+}
+figure.table.ck-widget.header-color-blue th a {
+  color: #ffffff;
+}
+figure.table.ck-widget.header-color-blue th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget.header-color-river th {
+  background: #6EA095;
+  color: #111111;
+}
+figure.table.ck-widget.header-color-river th a {
+  color: #111111;
+}
+figure.table.ck-widget.header-color-river th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget.header-color-oldgold th {
+  background: #EBBA45;
+  color: #222222;
+}
+figure.table.ck-widget.header-color-oldgold th a {
+  color: #222222;
+}
+figure.table.ck-widget.header-color-oldgold th a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+figure.table.ck-widget table {
+  border: none;
+}
+figure.table.ck-widget table td, figure.table.ck-widget table th {
+  padding: 0.5rem 1rem;
+  border-color: #e4e4e4;
+}
+figure.table.ck-widget table th {
+  background: #c4a77d;
+  color: #000000;
+}
+figure.table.ck-widget table a {
+  color: #2c5271;
+}
+figure.table.ck-widget table a:hover {
+  text-decoration: none;
+  background: transparent;
+}
+
+figure.auto-width.table.ck-widget table {
+  width: auto;
+}
+
+figure.full-width.table.ck-widget table {
+  width: 100%;
+}
+
+figure.alternate-row-color.table tbody tr:nth-child(odd) {
+  background-color: #F4F1ED;
+}
+
+figure.alternate-row-color.table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=richstyles.css.map */
