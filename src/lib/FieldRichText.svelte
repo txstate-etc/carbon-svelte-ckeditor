@@ -7,7 +7,7 @@
   import { ScreenReaderOnly } from '@txstate-mws/svelte-components'
   import { FORM_CONTEXT, FORM_INHERITED_PATH, nullableDeserialize, nullableSerialize, type FormStore, Field } from '@txstate-mws/svelte-forms'
   import { InlineNotification } from 'carbon-components-svelte'
-  import { getContext, onDestroy, onMount, tick } from 'svelte'
+  import { getContext, onDestroy, tick } from 'svelte'
   import { isNotBlank, randomid } from 'txstate-utils'
   import { getParserElement } from './util'
   import { type ConfigType, getConfig } from './RichTextTypes'
@@ -43,7 +43,8 @@
   let wrapper: HTMLElement
   let skipReaction = false
   let mounted = false
-  onMount(async () => {
+  async function init (..._: any[]) {
+    if (!element || mounted) return
     mounted = true
     if (ssr) return
     const Editor = (await import('@dosgato/ckeditor')).default as typeof ClassicEditor
@@ -63,9 +64,11 @@
     // updating CKEditor 5 hardcoded sr-only label and set aria-describedby to help text
     const richEditorLabel = wrapper?.querySelector('label')
     if (richEditorLabel) richEditorLabel.innerHTML = labelText
-    const editorDiv = wrapper.querySelector('> .ck-editor')
+    const editorDiv = wrapper.querySelector(':scope > .ck-editor')
     if (editorDiv && helpTextId) editorDiv.setAttribute('aria-describedby', helpTextId)
-  })
+  }
+  $: void init(element)
+
   onDestroy(async () => await editor?.destroy())
 
   function setModalZ () {
@@ -97,7 +100,7 @@
   {@const restMsgs = messages.filter(m => m.type !== 'error')}
   <label for={editorId} class="bx--label">{labelText}</label>
   <div bind:this={wrapper} class='ck-wrapper' class:compact>
-    <textarea id={editorId} name={fullpath} bind:this={element} aria-describedby={helpTextId} />
+    <textarea id={editorId} name={fullpath} bind:this={element} aria-describedby={helpTextId}></textarea>
   </div>
   <div class="field-richtext-footer">
     <div id={helpTextId} class="bx--form__helper-text">{#if !errMsgs.length && helpText}<ScreenReaderOnly>{helpText ?? ''}</ScreenReaderOnly>{:else}{helpText ?? ''}{/if}</div>

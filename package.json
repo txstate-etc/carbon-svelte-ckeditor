@@ -1,7 +1,7 @@
 {
   "name": "@txstate-mws/carbon-svelte-ckeditor",
   "description": "A CKEditor Field for use with the other form components in carbon-svelte. Separate due to GPL.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "exports": {
     ".": {
