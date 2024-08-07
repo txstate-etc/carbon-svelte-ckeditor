@@ -40,9 +40,7 @@ export const defaultConfig = {
       'indent',
       'outdent',
       '|',
-      'horizontalLine',
-      'code',
-      'blockQuote'
+      'horizontalLine'
     ],
     shouldNotGroupWhenFull: true
   },
@@ -61,13 +59,7 @@ const fullConfig = {
     tableProperties: {
       tableHeaderColors: [
         { label: 'None', value: 'header-color-none' },
-        { label: 'Default (Gold)', value: 'header-color-gold' },
-        { label: 'Maroon', value: 'header-color-maroon' },
-        { label: 'Charcoal', value: 'header-color-charcoal' },
-        { label: 'Deep Blue', value: 'header-color-blue' },
-        { label: 'River', value: 'header-color-river' },
-        { label: 'Sandstone', value: 'header-color-sandstone' },
-        { label: 'Old Gold', value: 'header-color-oldgold' }
+        { label: 'Charcoal', value: 'header-color-charcoal' }
       ],
       tableWidth: [
         { label: '100%', value: 'full-width' },
