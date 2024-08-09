@@ -45,6 +45,12 @@ export const defaultConfig = {
     shouldNotGroupWhenFull: true
   },
   htmlSupport: {},
+  link: {
+    options: {
+      disableDropdown: true,
+      disableBrowse: true
+    }
+  },
   ...listConfig
 }
 
@@ -71,6 +77,11 @@ const fullConfig = {
         { label: 'First Column', value: 'column' },
         { label: 'Both', value: 'both' }
       ]
+    },
+    tableCellProperties: {
+      disableBorder: true,
+      disableBackground: true,
+      disableDimensions: true
     }
   }
 }
