@@ -65,7 +65,7 @@ const fullConfig = {
     tableProperties: {
       tableHeaderColors: [
         { label: 'None', value: 'header-color-none' },
-        { label: 'Charcoal', value: 'header-color-charcoal' }
+        { label: 'Charcoal', value: 'header-color-charcoal', default: true }
       ],
       tableWidth: [
         { label: '100%', value: 'full-width' },
